@@ -1,5 +1,3 @@
-// home/page.tsx
-
 import { cookies } from 'next/headers';
 import axios from 'axios';
 import LogoutButton from '@/components/LogOutBtn';
@@ -58,7 +56,7 @@ export default async function HomePage() {
       </div>
     );
   } catch (error) {
-    console.error('Failed to fetch user profile:', error);
-    return <div>Failed to load profile</div>;
+    console.error('fetch user profile failed:', error);
+    return <div>Error: loading profile</div>;
   }
 }

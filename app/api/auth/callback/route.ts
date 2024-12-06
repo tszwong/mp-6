@@ -39,7 +39,7 @@ export async function GET(req: Request) {
     };
 
     // console.log('User Info:', user);
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3001';
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://mp-6-umber.vercel.app/';
     const homeUrl = `${baseUrl}/home`;
 
     const response = NextResponse.redirect(homeUrl);

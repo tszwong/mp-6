@@ -1,5 +1,3 @@
-// app/page.tsx
-
 import { cookies } from 'next/headers';
 import Link from 'next/link';
 
@@ -8,9 +6,8 @@ export default async function HomePage() {
   const token = cookieStore.get('token')?.value;
 
   return (
-    <main style={{ textAlign: 'center', padding: '2rem' }}>
+    <main>
       <h1>LinkedIn OAuth App</h1>
-
       <div style={{ marginTop: '2rem' }}>
         <Link
           href="/api/auth/login"
